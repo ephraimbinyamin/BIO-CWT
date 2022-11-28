@@ -1,0 +1,124 @@
+// === Main ===
+.advantages {
+    padding-top: 150px;
+    &__title {
+        width: 1040px;
+        margin-left: 10%;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1188px;
+        margin-top: 121px;
+        &_image {
+            width: 610px;
+        }
+        &_text {
+            width: 450px;
+            &-item {
+                color: $white;
+                font-family: $Inter;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 139.4%;
+                &:not(:first-child) {
+                    margin-top: 46px;
+                }
+                &:not(:last-child) {
+                    width: 387px;
+                }
+            }
+        }
+    }
+    &__btn {
+        margin: 121px auto 0;
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 1199px) {
+    .advantages{
+        &__title {
+            width: 920px;
+            margin-left: 5%;
+        }
+        &__content {
+            max-width: 610px;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 100px;
+            &_image {
+                order: 2;
+                margin-top: 100px;
+            }
+            &_text {
+                width: 100%;
+                &-item {
+                    order: 1;
+                    width: 100%;
+                    &:not(:last-child) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .advantages{
+        &__title {
+            width: 720px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages{
+        &__title {
+            width: 520px;
+        }
+        &__content {
+            &_image {
+                width: 100%;
+            }
+            &_text {
+                &-item {
+                    font-size: 20px;
+                    &:not(:first-child) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages{
+        &__title {
+            width: 280px;
+            margin-left: 0;
+            font-size: 27px;
+        }
+        &__content {
+            margin-top: 50px;
+            &_text {
+                &-item {
+                    font-size: 15px;
+                    line-height: 139.4%;
+                }
+            }
+            &_image {
+                margin-top: 50px;
+            }
+        }
+        &__btn {
+            margin-top: 50px;
+        }
+    }
+}
+// === / Media ===

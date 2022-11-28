@@ -1,0 +1,228 @@
+// === Main ===
+.work {
+    padding-top: 150px;
+    &__title {
+        margin-left: 10%;
+    }
+    &__carousel {
+        width: 1130px;
+        margin: 121px auto 0;
+    }
+    .carousel {
+        &-inner {
+            border-radius: 42px;
+        }
+        &-control {
+            &-prev {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100px;
+                height: 100px;
+                left: -100px;
+                opacity: 1;
+                svg {
+                    path {
+                        transition: all 0.3s;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    svg {
+                        path {
+                            stroke: $dark-blue;
+                        }
+                    }
+                }
+            }
+            &-next {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100px;
+                height: 100px;
+                right: -100px;
+                opacity: 1;
+                svg {
+                    path {
+                        transition: all 0.3s;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    svg {
+                        path {
+                            stroke: $dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+        &-indicators {
+            width: 114px;
+            justify-content: space-between;
+            bottom: -52px;
+            margin: 0 auto;
+            [data-bs-target] {
+                box-sizing: border-box;
+                width: 26px;
+                height: 26px;
+                border: 4px solid $blue;
+                border-radius: 100%;
+                background-color: transparent;
+                margin: 0;
+                opacity: 1;
+                transition: all 0.3s;
+            }
+            .active {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+// === / Main ===
+
+// === Media ===
+@media (max-width: 1399px) {
+    .work {
+        &__carousel {
+            width: 80%;
+        }
+        .carousel {
+            &-control {
+                &-prev {
+                    width: 50px;
+                    height: 50px;
+                    left: -80px;
+                }
+                &-next {
+                    width: 50px;
+                    height: 50px;
+                    right: -80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .work {
+        .carousel {
+            &-control {
+                &-prev {
+                    width: 40px;
+                    height: 40px;
+                    left: -60px;
+                }
+                &-next {
+                    width: 40px;
+                    height: 40px;
+                    right: -60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .work {
+        .carousel {
+            &-indicators {
+                [data-bs-target] {
+                    width: 20px;
+                    height: 20px;
+                    border-width: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .work {
+        padding-top: 100px;
+        &__carousel {
+            margin-top: 70px;
+        }
+        .carousel {
+            &-inner {
+                border-radius: 14px;
+            }
+            &-control {
+                &-prev {
+                    width: 30px;
+                    height: 30px;
+                    left: -50px;
+                    &:hover {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $light-blue;
+                            }
+                        }
+                    }
+                    &:active {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $dark-blue;
+                            }
+                        }
+                    }
+                }
+                &-next {
+                    width: 30px;
+                    height: 30px;
+                    right: -50px;
+                    &:hover {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $light-blue;
+                            }
+                        }
+                    }
+                    &:active {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $dark-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .work {
+        &__carousel {
+            margin-top: 50px;
+        }
+        .carousel {
+            &-control {
+                &-prev {
+                    width: 20px;
+                    height: 20px;
+                    left: -30px;
+                }
+                &-next {
+                    width: 20px;
+                    height: 20px;
+                    right: -30px;
+                }
+            }
+            &-indicators {
+                width: 60px;
+                bottom: -27px;
+                [data-bs-target] {
+                    width: 13px;
+                    height: 13px;
+                    border-width: 2px;
+                }
+            }
+        }
+    }
+}
+// === / Media ===
