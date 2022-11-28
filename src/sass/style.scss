@@ -1,0 +1,63 @@
+// === Base ===
+@import "base/variables";
+@import "base/mixins";
+// === / Base ===
+
+// === Libs ===
+// @import "libs/bootstrap-reboot.min";
+@import "libs/bootstrap.min";
+@import "libs/fonts";
+@import "libs/reset";
+// === / Libs === 
+
+// === Components ===
+@import "components/logo";
+@import "components/button";
+@import "components/title";
+@import "components/navbar-main";
+@import "components/navbar-secondary";
+// === / Components ===
+
+// === Sections ===
+
+// === Home ===
+@import "sections/header";
+@import "sections/wood";
+@import "sections/work";
+@import "sections/advantages";
+@import "sections/about";
+@import "sections/questions";
+@import "sections/price";
+@import "sections/contact";
+@import "sections/404";
+@import "sections/footer";
+// === / Home ===
+
+// === / Sections ===
+
+// === Common ===
+* {
+    color: $white;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: $main-bg url('../img/bg/main_bg.svg') no-repeat 0 0 / cover;
+}
+
+.container {
+    display: block !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-outer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+// === / Common ===

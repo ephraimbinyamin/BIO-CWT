@@ -1,0 +1,305 @@
+// === Main ===
+.price {
+    padding-top: 150px;
+    &__title {
+        margin-left: 10%;
+    }
+    &__carousel {
+        margin: 0 auto;
+        margin-top: 116px;
+    }
+    &__container {
+        display: grid;
+        grid-template: 500px 322px / 611px 482px;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    &__item {
+        border-radius: 30px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .carousel {
+        &-inner {
+            border-radius: 30px;
+            margin: 0 auto;
+        }
+        &-control {
+            &-prev {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100px;
+                height: 100px;
+                left: -78px;
+                opacity: 1;
+                svg {
+                    path {
+                        transition: all 0.3s;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    svg {
+                        path {
+                            stroke: $dark-blue;
+                        }
+                    }
+                }
+            }
+            &-next {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100px;
+                height: 100px;
+                right: -78px;
+                opacity: 1;
+                svg {
+                    path {
+                        transition: all 0.3s;
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                    svg {
+                        path {
+                            stroke: $dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+        &-indicators {
+            width: 114px;
+            justify-content: space-between;
+            bottom: -52px;
+            margin: 0 auto;
+            [data-bs-target] {
+                box-sizing: border-box;
+                width: 26px;
+                height: 26px;
+                border: 4px solid $blue;
+                border-radius: 100%;
+                background-color: transparent;
+                margin: 0;
+                opacity: 1;
+                transition: all 0.3s;
+            }
+            .active {
+                background-color: $white;
+            }
+        }
+    }
+}
+// === / Main ===
+
+// === Media ===
+@media (max-width: 1399px) {
+    .price {
+        &__carousel {
+            width: 960px;
+        }
+        &__container {
+            grid-template: 435px 280px / 540px 400px;
+        }
+        &__item {
+            border-radius: 18px;
+        }
+        .carousel {
+            &-inner {
+                border-radius: 18px;
+            }
+            &-control {
+                &-prev {
+                    width: 50px;
+                    height: 50px;
+                    left: -100px;
+                }
+                &-next {
+                    width: 50px;
+                    height: 50px;
+                    right: -100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .price {
+        &__carousel {
+            width: 760px;
+        }
+        &__container {
+            grid-template: 350px 220px / 420px 320px;
+        }
+        .carousel {
+            &-control {
+                &-prev {
+                    width: 40px;
+                    height: 40px;
+                    left: -90px;
+                }
+                &-next {
+                    width: 40px;
+                    height: 40px;
+                    right: -90px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .price {
+        &__carousel {
+            width: 580px;
+        }
+        &__container {
+            grid-template: 260px 150px / 315px 245px;
+        }
+        .carousel {
+            &-indicators {
+                [data-bs-target] {
+                    width: 20px;
+                    height: 20px;
+                    border-width: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .price {
+        padding-top: 100px;
+        &__carousel {
+            width: 430px;
+            margin-top: 70px;
+        }
+        &__container {
+            grid-template: 200px 120px / 240px 178px;
+            gap: 10px;
+        }
+        .carousel {
+            &-control {
+                &-prev {
+                    width: 30px;
+                    height: 30px;
+                    left: -50px;
+                    &:hover {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $light-blue;
+                            }
+                        }
+                    }
+                    &:active {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $dark-blue;
+                            }
+                        }
+                    }
+                }
+                &-next {
+                    width: 30px;
+                    height: 30px;
+                    right: -50px;
+                    &:hover {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $light-blue;
+                            }
+                        }
+                    }
+                    &:active {
+                        opacity: 1;
+                        svg {
+                            path {
+                                stroke: $dark-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .price {
+        &__carousel {
+            width: 225px;
+            margin-top: 50px;
+        }
+        &__container {
+            grid-template: 105px 65px / 120px 95px;
+        }
+        &__item {
+            border-radius: 7px;
+        }
+        .carousel {
+            &-inner {
+                border-radius: 7px;
+            }
+            &-control {
+                &-prev {
+                    width: 20px;
+                    height: 20px;
+                    left: -30px;
+                }
+                &-next {
+                    width: 20px;
+                    height: 20px;
+                    right: -30px;
+                }
+            }
+            &-indicators {
+                width: 60px;
+                bottom: -27px;
+                [data-bs-target] {
+                    width: 13px;
+                    height: 13px;
+                    border-width: 2px;
+                }
+            }
+        }
+    }
+}
+// === / Media ===
+
+
+
+
+// === Media ===
+
+// 1130 || 754
+
+// @media (max-width: 1399px) {
+    // 960 || 640
+// }
+
+// @media (max-width: 1199px) {
+//     760 || 510
+// }
+
+// @media (max-width: 991px) {
+//     580 || 390
+// }
+
+// @media (max-width: 767px) {
+//     430 || 285
+// }
+
+// @media (max-width: 575px) {
+//     225 || 150
+// }
+// === / Media ===
