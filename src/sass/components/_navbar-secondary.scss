@@ -3,7 +3,6 @@
     background-color: $red;
     box-shadow: 0px -8px 52px rgba(238, 238, 238, 0.17);
     border-radius: 0px 0px 60px 60px;
-    transition: all 0.5s;
     &__wrapper {
         height: 181px;
         display: flex;
@@ -75,7 +74,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            transition: all 0.3s;
+            transition: color 0.3s;
         }
         &-active {
             a {
@@ -184,7 +183,7 @@
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 24px;
-                transition: all 0.3s;
+                transition: color 0.3s;
             }
         }
     }
