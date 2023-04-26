@@ -9,28 +9,11 @@
     <meta name="description" content="description">
 
     <!-- Favicon  -->
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png"> -->
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon.ico">
-    <!-- <link rel="manifest" href="icons/favicon/manifest.json"> -->
-    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
-    <!-- <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png"> -->
-    <!-- <meta name="theme-color" content="#ffffff"> -->
     <!-- Favicon  -->
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;700&family=Saira:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -71,10 +54,10 @@
                         <li class="navbar-secondary__link" onclick="linkOnClick()">
                             <a href="/gallery">Gallery</a>
                         </li>
-                        <li class="navbar-secondary__link navbar-secondary__link-active" onclick="linkOnClick()">
+                        <li class="navbar-secondary__link" onclick="linkOnClick()">
                             <a href="/prices">Prices for services</a>
                         </li>
-                        <li class="navbar-secondary__link" onclick="linkOnClick()">
+                        <li class="navbar-secondary__link navbar-secondary__link-active" onclick="linkOnClick()">
                             <a href="/about">About us</a>
                         </li>
                         <li class="navbar-secondary__link" onclick="linkOnClick()">
@@ -92,92 +75,37 @@
     </nav>
     <!-- Navbar-Secondary -->
 
-    <!-- Price -->
-    <section class="price section-outer">
-        <div class="container">
-            <div class="title price__title">PRICE LIST</div>
-            <div id="carouselExampleIndicators1" class="carousel slide price__carousel" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- About -->
+    <section class="about section-outer">
+        <div class="about__wrapper">
+            <div class="about__text">
+                <div class="title about__title">About us</div>
+                <div class="about__descr">BIO CWT  - We manufacture solid wood products according to individual drawings. We make chairs, armchairs, wardrobes, beds and much more in our own workshop, equipped with all the necessary industrial equipment.</div>
+            </div>
+            <div class="about__images">
+                <div class="about__images_item">
+                    <img src="img/about/1.png" alt="about" />
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="price__container">
-                            <div class="price__item">
-                                <img src="img/price/1.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/2.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/3.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/4.png" alt="price">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="price__container">
-                            <div class="price__item">
-                                <img src="img/price/1.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/2.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/3.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/4.png" alt="price">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="price__container">
-                            <div class="price__item">
-                                <img src="img/price/1.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/2.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/3.png" alt="price">
-                            </div>
-                            <div class="price__item">
-                                <img src="img/price/4.png" alt="price">
-                            </div>
-                        </div>
-                    </div>
+                <div class="about__images_item">
+                    <img src="img/about/2.png" alt="about" />
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                    <svg class="work__carousel_arrow-left" width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 27L27 52M54.0833 27H2H54.0833ZM2 27L27 2L2 27Z" stroke="#A3B8D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                    <svg class="work__carousel_arrow-right" width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M54.0833 27L29.0833 52M2 27H54.0833H2ZM54.0833 27L29.0833 2L54.0833 27Z" stroke="#A3B8D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <div class="about__images_item">
+                    <img src="img/about/3.png" alt="about" />
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Price -->
+    <!-- About -->
 
     <!-- Work -->
     <section class="work section-outer">
         <div class="container">
             <div class="title work__title">Our work</div>
-            <div id="carouselExampleIndicators2" class="carousel slide work__carousel" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide work__carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -190,13 +118,13 @@
                         <img src="img/work.png" class="d-block w-100" alt="img">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <svg class="work__carousel_arrow-left" width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 27L27 52M54.0833 27H2H54.0833ZM2 27L27 2L2 27Z" stroke="#A3B8D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <svg class="work__carousel_arrow-right" width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M54.0833 27L29.0833 52M2 27H54.0833H2ZM54.0833 27L29.0833 2L54.0833 27Z" stroke="#A3B8D7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
