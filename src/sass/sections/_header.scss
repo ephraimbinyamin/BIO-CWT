@@ -25,22 +25,22 @@
         display: flex;
         justify-content: space-between;
         position: absolute;
-        top: 218px;
+        top: 195px;
         right: 0;
-        width: 1245px;
+        width: 1120px;
         background-color: $red;
         border-radius: 43px 0px 0px 43px;
         filter: drop-shadow(0px 4px 30px rgba(245, 245, 245, 0.17));
         &_text {
-            width: 540px;
-            padding: 75px 44px 102px 50px;
+            width: 565px;
+            padding: 70px 44px 102px 45px;
         }
         &_images {
             position: relative;
-            width: 605px;
+            width: 553px;
             &-item {
-                width: 205px;
-                height: 205px;
+                width: 185px;
+                height: 185px;
                 img {
                     width: 100%;
                     height: 100%;
@@ -48,40 +48,40 @@
                 }
                 &:nth-child(1) {
                     position: absolute;
-                    top: 43px;
-                    right: 115px;
+                    top: 40px;
+                    right: 105px;
                 }
                 &:nth-child(2) {
                     position: absolute;
-                    top: 316px;
-                    right: 360px;
+                    top: 285px;
+                    right: 325px;
                 }
                 &:nth-child(3) {
                     position: absolute;
-                    top: 452px;
-                    right: 115px;
+                    top: 408px;
+                    right: 105px;
                 }
             }
         }
         &_divider {
             position: absolute;
-            top: 43px;
-            left: 634px;
+            top: 76px;
+            left: 565px;
             width: 1px;
             height: 511px;
             background-color: $white;
         }
     }
     &__title {
-        width: 540px;
+        width: 520px;
     }
     &__subtitle {
         width: 333px;
         color: $light-orange;
         font-family: $Inter;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 39px;
+        font-size: 27px;
+        line-height: 35px;
         margin-top: 22px;
     }
     &__btn {

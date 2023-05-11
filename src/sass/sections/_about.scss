@@ -1,7 +1,7 @@
 // === Main ===
 .about {
-    width: 1325px;
-    height: 900px;
+    width: 1200px;
+    height: 800px;
     margin-top: 150px;
     &__wrapper {
         position: relative;
@@ -10,31 +10,32 @@
         background-color: $red;
         border-radius: 0px 42px 42px 0px;
         filter: drop-shadow(0px 4px 30px rgba(245, 245, 245, 0.17));
-        padding: 50px 556px 300px 253px;
+        padding: 40px 556px 270px 225px;
     }
     &__text {
-        width: 516px;
+        width: 480px;
     }
     &__descr {
         color: $white;
         font-family: $Inter;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 139.4%;
+        font-size: 27px;
+        line-height: 38px;
         margin-top: 67px;
     }
     &__images {
         &_item {
             position: absolute;
             &:nth-child(1) {
-                top: 61px;
-                right: 70px;
+                width: 185px;
+                top: 55px;
+                right: 65px;
             }
             &:nth-child(2) {
-                width: 357px;
-                height: 357px;
-                top: 167px;
-                right: 144px;
+                width: 325px;
+                height: 330px;
+                top: 150px;
+                right: 130px;
                 border: 10px solid $red;
                 border-top-width: 10px;
                 border-right-width: 13px;
@@ -44,8 +45,9 @@
                 overflow: hidden;
             }
             &:nth-child(3) {
-                top: 539px;
-                right: 102px;
+                width: 185px;
+                top: 490px;
+                right: 95px;
             }
         }
     }

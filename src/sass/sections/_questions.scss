@@ -11,7 +11,7 @@
         margin-top: 45px;
     }
     &__form {
-        width: 600px;
+        width: 540px;
     }
     &__input {
         height: 77px;
@@ -27,8 +27,8 @@
                 color: $white;
                 font-family: $Inter;
                 font-weight: 500;
-                font-size: 30px;
-                line-height: 139.4%;
+                font-size: 27px;
+                line-height: 38px;
             }
         }
     }
@@ -47,8 +47,8 @@
                 color: $white;
                 font-family: $Inter;
                 font-weight: 500;
-                font-size: 30px;
-                line-height: 139.4%;
+                font-size: 27px;
+                line-height: 38px;
             }
         }
     }
@@ -57,17 +57,18 @@
     }
     &__descr {
         color: $white;
-        width: 546px;
+        width: 450px;
         font-family: $Inter;
         font-weight: 500;
-        font-size: 30px;
-        line-height: 139.4%;
+        font-size: 27px;
+        line-height: 38px;
         text-align: right;
     }
     &__bg {
         position: absolute;
         right: 15px;
-        bottom: -315px;
+        bottom: -295px;
+        width: 580px;
     }
 }
 // === / Main ===

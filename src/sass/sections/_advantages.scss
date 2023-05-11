@@ -2,7 +2,7 @@
 .advantages {
     padding-top: 150px;
     &__title {
-        width: 1040px;
+        width: 940px;
         margin-left: 10%;
     }
     &__content {
@@ -12,16 +12,16 @@
         max-width: 1188px;
         margin-top: 121px;
         &_image {
-            width: 610px;
+            width: 550px;
         }
         &_text {
-            width: 450px;
+            width: 410px;
             &-item {
                 color: $white;
                 font-family: $Inter;
                 font-weight: 500;
-                font-size: 30px;
-                line-height: 139.4%;
+                font-size: 27px;
+                line-height: 35px;
                 &:not(:first-child) {
                     margin-top: 46px;
                 }
